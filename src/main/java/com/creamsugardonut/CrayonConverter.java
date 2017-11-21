@@ -42,6 +42,8 @@ public class CrayonConverter {
                         output.append("\n" + "<pre class=\"lang:" + language + "\">" + sb.toString() + "</pre>" + "\n");
                     }
                     sb = new StringBuilder();
+                } else {
+                    output.append(line + "\n");
                 }
             }
         }
